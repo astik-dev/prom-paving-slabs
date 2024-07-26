@@ -30,10 +30,28 @@
             line-height: 1.6;
 
             a {
+                display: inline-block;
+
                 font-size: 24px;
                 line-height: 38.4px;
                 color: rgb(255, 219, 153);
                 white-space: nowrap;
+
+                transition: all 0.2s;
+
+                animation: pulsate 1.6s linear infinite;
+
+                @keyframes pulsate{
+                    50%{
+                        color: rgb(255, 186, 68);
+                    }
+                }
+
+                @media (hover: hover) {
+                    &:hover {
+                        transform: scale(1.05) !important;
+                    }
+                }
             }
         }
     }

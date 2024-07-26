@@ -115,10 +115,31 @@ body {
 	line-height: 1.6;
 }
 .body .contact-info__row p a {
+	display: inline-block;
 	font-size: 24px;
 	line-height: 38.4px;
 	color: rgb(255, 219, 153);
 	white-space: nowrap;
+	-webkit-transition: all 0.2s;
+	transition: all 0.2s;
+	-webkit-animation: pulsate 1.6s linear infinite;
+	        animation: pulsate 1.6s linear infinite;
+}
+@-webkit-keyframes pulsate {
+	50% {
+		color: rgb(255, 186, 68);
+	}
+}
+@keyframes pulsate {
+	50% {
+		color: rgb(255, 186, 68);
+	}
+}
+@media (hover: hover) {
+	.body .contact-info__row p a:hover {
+		-webkit-transform: scale(1.05) !important;
+		        transform: scale(1.05) !important;
+	}
 }
 
 .body .tip {
