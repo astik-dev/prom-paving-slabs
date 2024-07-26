@@ -196,6 +196,107 @@ body {
 	}
 }
 
+.body .customer-help {
+	padding: 26px 25px 60px 25px;
+}
+@container body (max-width: 380px) {
+	.body .customer-help {
+		padding: 16px 10px 40px 10px;
+	}
+}
+.body .customer-help__grid {
+	display: -ms-grid;
+	display: grid;
+	-ms-grid-columns: 1fr 40px 1fr;
+	grid-template-columns: 1fr 1fr;
+	gap: 40px;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	margin-top: 53px;
+}
+@container body (max-width: 644px) {
+	.body .customer-help__grid {
+		-ms-grid-columns: 1fr;
+		grid-template-columns: 1fr;
+	}
+}
+@container body (max-width: 420px) {
+	.body .customer-help__grid {
+		gap: 35px;
+		margin-top: 40px;
+	}
+}
+@container body (max-width: 380px) {
+	.body .customer-help__grid {
+		gap: 30px;
+		margin-top: 25px;
+	}
+}
+.body .customer-help__image {
+	width: 100%;
+}
+.body .customer-help__image_mobile {
+	display: none;
+}
+@container body (max-width: 644px) {
+	.body .customer-help__image_desktop {
+		display: none;
+	}
+	.body .customer-help__image_mobile {
+		display: block;
+	}
+}
+.body .customer-help__list {
+	list-style: none;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+	gap: 19.2px;
+	margin: 0;
+	padding: 0;
+	font-size: 16px;
+	line-height: 1.6;
+}
+.body .customer-help__list li {
+	margin: 0;
+	padding-left: 36px;
+	background: url("https://img2.creatium.app/plp/i.1.creatium.io/cb/f1/85/d0621f75a914ab1ab4ae9fde7053d27367/iconfinder_correct_3855625.png") no-repeat left top;
+	background-size: 24px 24px;
+}
+.body .customer-help__list li:before {
+	display: none;
+}
+.body .customer-help__contact-us {
+	margin-top: 45px;
+	padding: 11px 11px 11px 21px;
+	background-color: rgb(55, 55, 57);
+	border-radius: 10px;
+	border-width: 1px;
+	border-style: solid;
+	border-color: rgb(94, 94, 98);
+}
+@container body (max-width: 420px) {
+	.body .customer-help__contact-us {
+		margin-top: 30px;
+		padding: 10px;
+	}
+}
+.body .customer-help__contact-us .title-2 {
+	margin-bottom: 20px;
+	font-size: 22px;
+}
+@container body (max-width: 420px) {
+	.body .customer-help__contact-us .title-2 {
+		margin-bottom: 14px;
+		font-size: 20px;
+	}
+}
+
 .body .block-1 {
 	padding: 16px 20px 30px 20px;
 	background: rgb(45, 45, 47);
@@ -228,4 +329,9 @@ body {
 		margin-bottom: 30px;
 		font-size: 19px;
 	}
+}
+
+.body .block-2 {
+	background: rgb(45, 45, 47);
+	border-radius: 5px;
 }

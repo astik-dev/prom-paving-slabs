@@ -1,0 +1,111 @@
+.body .customer-help {
+    padding: 26px 25px 60px 25px;
+
+    @container body (max-width: 380px) {
+        padding: 16px 10px 40px 10px;
+    }
+
+
+    &__grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 40px;
+        align-items: center;
+
+        margin-top: 53px;
+
+        @container body (max-width: 644px) {
+            grid-template-columns: 1fr;
+        }
+
+        @container body (max-width: 420px) {
+            gap: 35px;
+
+            margin-top: 40px;
+        }
+
+        @container body (max-width: 380px) {
+            gap: 30px;
+
+            margin-top: 25px;
+        }
+    }
+
+    &__image {
+        width: 100%;
+
+        &_mobile {
+            display: none;
+        }
+
+        @container body (max-width: 644px) {
+            &_desktop {
+                display: none;
+            }
+
+            &_mobile {
+                display: block;
+            }
+        }
+    }
+
+    &__content {
+        
+    }
+
+    &__list {
+        list-style: none;
+
+        display: flex;
+        flex-direction: column;
+        gap: 19.2px;
+
+        margin: 0;
+        padding: 0;
+
+        font-size: 16px;
+        line-height: 1.6;
+
+        li {
+            margin: 0;
+            padding-left: 36px;
+
+            background: url('https://img2.creatium.app/plp/i.1.creatium.io/cb/f1/85/d0621f75a914ab1ab4ae9fde7053d27367/iconfinder_correct_3855625.png') no-repeat left top;
+            background-size: 24px 24px;
+
+            &:before {
+                display: none;
+            }
+        }
+    }
+
+    &__contact-us {
+        margin-top: 45px;
+        padding: 11px 11px 11px 21px;
+
+        background-color: rgb(55, 55, 57);
+        border-radius: 10px;
+        border-width: 1px;
+        border-style: solid;
+        border-color: rgb(94, 94, 98);
+
+        @container body (max-width: 420px) {
+            margin-top: 30px;
+
+            padding: 10px;
+        }
+
+
+        .title-2 {
+            margin-bottom: 20px;
+
+            font-size: 22px;
+
+            @container body (max-width: 420px) {
+                margin-bottom: 14px;
+
+                font-size: 20px;
+            }
+        }
+    }
+}
