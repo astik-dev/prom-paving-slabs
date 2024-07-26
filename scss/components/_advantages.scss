@@ -1,0 +1,108 @@
+.body .advantages {
+    padding: 26px 25px 40px 25px;
+
+    background: rgba(133, 133, 138, 0.16);
+
+    @container body (max-width: 380px) {
+        padding: 16px 10px 25px 10px;
+    }
+    
+
+    &__items {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 35px;
+
+        margin-top: 50px;
+
+        @container body (max-width: 380px) {
+            margin-top: 30px;
+
+            gap: 25px;
+        }
+    }
+
+    &__item {
+        width: calc(33.333% - (35px * 2) / 3);
+
+        padding: 10px 10px 15px 10px;
+
+        border-radius: 5px;
+        background: rgb(55, 55, 57);
+
+        @container body (max-width: 644px) {
+            width: calc(50% - 35px / 2);
+        }
+
+        @container body (max-width: 530px) {
+            width: 100%;
+        }
+
+
+        &-svg-container {
+            height: 100px;
+
+            border-radius: 5px;
+            background: rgb(45, 45, 47);
+
+            text-align: center;
+        }
+
+        &-svg {
+            height: 100%;
+
+            &_stroke {
+                path,
+                polygon {
+                    fill: none;
+                    stroke: rgb(255, 219, 153);
+                    stroke-width: 1.5;
+                    stroke-linecap: round;
+                    stroke-linejoin: round;
+                    stroke-miterlimit: 10;
+                }
+            }
+
+            &_fill {
+                path {
+                    fill: rgb(255, 219, 153);
+                }
+            }
+        }
+
+        &-title {
+            margin: 20px 0 25px 0;
+            padding: 0 4px;
+
+            font-size: 21px;
+            text-align: center;
+
+            @container body (max-width: 850px) {
+                padding: 0;
+            }
+        }
+
+        &-list {
+            list-style-type: square;
+          
+            display: flex;
+            flex-direction: column;
+            gap: 7.5px;
+
+            margin: 0;
+            padding: 0 8px 0 24px; // 24 = 8 + 16
+
+            li {
+                margin: 0;
+
+                color: rgb(212, 212, 214);
+                font-weight: 300;
+
+                &:before {
+                    display: none;
+                }
+            }
+        }
+    }
+}
