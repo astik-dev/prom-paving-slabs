@@ -1,0 +1,178 @@
+.body .why-choose-us {
+    padding: 30px 20px 47px 20px;
+
+    @container body (max-width: 380px) {
+        padding: 25px 10px 27px 10px;
+    }
+
+    &__grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        gap: 40px;
+
+        margin-top: 50px;
+
+        @container body (max-width: 644px) {
+            grid-template-columns: 1fr;
+        }
+
+        @container body (max-width: 380px) {
+            gap: 30px;
+
+            margin-top: 40px;
+        }
+    }
+
+    &__items {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+
+        @container body (max-width: 380px) {
+            gap: 25px;
+        }
+    }
+
+    &__item {
+
+        &-header {
+            display: flex;
+            align-items: center;
+            gap: 30px;
+
+            padding: 15px;
+
+            background: rgb(55, 55, 57);
+            border-radius: 5px;
+        }
+        
+        &-number {
+            flex-shrink: 0;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            width: 52px;
+            height: 52px;
+
+            border-radius: 50%;
+            background: rgb(45, 45, 47);
+
+            color: rgb(255, 219, 153);
+            font-weight: bolder;
+            font-size: 26px;
+            line-height: 1.6;
+        }
+
+        &-title {
+            padding: 5px 0;
+        }
+
+        &-text {
+            margin-left: 75px;
+            padding: 14px 15px 10px 20px;
+
+            color: rgb(183, 183, 183);
+            font-weight: 300;
+
+            border-left: 2px solid rgb(55, 55, 57);
+        }
+    }
+
+    &__image {
+        width: 100%;
+
+        object-fit: contain;
+
+        @container body (max-width: 644px) {
+            grid-row: 1 / 2;
+            justify-self: center;
+            width: 65%;
+        }
+    }
+
+    &__contact-us {
+        display: flex;
+        align-items: flex-start;
+        gap: 30px;
+
+        margin-top: 55px;
+
+        @container body (max-width: 644px) {
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        @container body (max-width: 380px) {
+            margin-top: 40px;
+        }
+
+
+        &-button {
+            flex-shrink: 0;
+
+            position: relative;
+
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+
+            padding: 16px 35px;
+
+            background-color: rgb(55, 55, 57);
+            border-radius: 10px;
+            border-width: 2px;
+            border-style: solid;
+            border-color: rgb(127, 127, 132);
+
+            transition: all 0.2s;
+
+            font-size: 34px;
+            line-height: 1.6;
+            letter-spacing: 0.02em;
+            color: rgb(255, 219, 153);
+
+            @container body (max-width: 355px) {
+                padding: 12px 28px;
+
+                font-size: 28px;
+            }
+
+            @media (hover: hover) {
+                &:hover {
+                    color: rgb(255, 219, 153);
+                    
+                    transform: scale(1.03);
+                }
+            }
+
+
+            &:after {
+                content: "";
+
+                position: absolute;
+                bottom: -7px;
+                right: 47px;
+
+                display: inline-block;
+
+                width: 26px;
+                height: 26px;
+
+                background: url("https://img2.creatium.app/disk2/fc/c0/e7/4699ebf87e619f0ea790ff5171e4077837/kisspng_computer_mouse_pointer_computer_icons_point_and_cl_c.png") no-repeat;
+                background-size: 100% 100%;
+                background-position: cover;
+
+                @container body (max-width: 355px) {
+                    right: 35px;
+
+                    width: 24px;
+                    height: 24px;
+                }
+            }
+        }
+    }
+}
