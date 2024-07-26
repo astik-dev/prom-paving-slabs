@@ -1,12 +1,35 @@
-@use "../abstracts/fonts";
-
-
-@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Oswald:wght@200..700&display=swap');
-
-
 .body {
-    font-family: fonts.$FiraSans;
+    font-family: Arial, sans-serif;
     color: #FFF;
     font-size: 15px;
     line-height: 1.5;
+
+    .title-1 {
+        font-size: 34px;
+        line-height: 1.6;
+        letter-spacing: 0.02em;
+    
+        span {
+            color: rgb(255, 219, 153);
+        }
+
+        @container body (max-width: 355px) {
+            font-size: 28px;
+        }
+    }
+    
+    .title-2 {
+        font-size: 26px;
+        line-height: 1.6;
+        letter-spacing: 0.02em;
+
+        @container body (max-width: 690px) {
+            font-size: 24px;
+        }
+    }
+    
+    .title-3 {
+        font-size: 22px;
+        line-height: 1.4;
+    }
 }

@@ -1,0 +1,23 @@
+.body .tips {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(285px, 1fr));
+    gap: 35px;
+
+    @container body (max-width: 355px) {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 20px;
+    }
+
+
+    &__contact-us {
+        justify-self: center;
+    }
+
+    .title-2 {
+        margin-bottom: 30px;
+
+        @container body (max-width: 355px) {
+            margin-bottom: 15px;
+        }
+    }
+}

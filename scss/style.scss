@@ -1,3 +1,9 @@
 @use "base/reset";
 @use "base/base";
 @use "base/typography";
+
+@use "components/contact-info";
+@use "components/tip";
+@use "components/tips";
+
+@use "layouts/block-1";

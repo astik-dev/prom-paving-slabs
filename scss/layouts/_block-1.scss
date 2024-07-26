@@ -1,0 +1,37 @@
+.body .block-1 {
+    padding: 16px 20px 30px 20px;
+
+    background: rgb(45, 45, 47);
+	border-radius: 5px;
+
+    @container body (max-width: 380px) {
+        padding: 10px;
+    }
+
+    hr {
+        width: 10%;
+        height: 1px;
+
+        margin: 20px 0;
+
+        background-color: rgb(212, 212, 214);
+
+        @container body (max-width: 355px) {
+            margin: 15px 0;
+        }
+    }
+
+    &__text {
+        margin-bottom: 44px;
+
+        font-size: 22px;
+        line-height: 1.6;
+        letter-spacing: 0.02em;
+
+        @container body (max-width: 355px) {
+            margin-bottom: 30px;
+
+            font-size: 19px;
+        }
+    }
+}
