@@ -118,7 +118,7 @@ body {
 	display: inline-block;
 	font-size: 24px;
 	line-height: 38.4px;
-	color: rgb(255, 219, 153);
+	color: rgb(255, 227, 175);
 	white-space: nowrap;
 	-webkit-transition: all 0.2s;
 	transition: all 0.2s;
@@ -127,12 +127,12 @@ body {
 }
 @-webkit-keyframes pulsate {
 	50% {
-		color: rgb(255, 186, 68);
+		color: rgb(255, 178, 45);
 	}
 }
 @keyframes pulsate {
 	50% {
-		color: rgb(255, 186, 68);
+		color: rgb(255, 178, 45);
 	}
 }
 @media (hover: hover) {
