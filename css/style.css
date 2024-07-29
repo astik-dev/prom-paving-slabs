@@ -568,6 +568,8 @@ body {
 	border-color: rgb(127, 127, 132);
 	-webkit-transition: all 0.2s;
 	transition: all 0.2s;
+	-webkit-animation: border-color-change 1.1s linear infinite;
+	        animation: border-color-change 1.1s linear infinite;
 	font-size: 23px;
 	line-height: 1.6;
 	color: #FFF;
@@ -577,6 +579,16 @@ body {
 		gap: 5px;
 		padding: 6px 16px 6px 6px;
 		font-size: 20px;
+	}
+}
+@-webkit-keyframes border-color-change {
+	50% {
+		border-color: rgb(198, 172, 122);
+	}
+}
+@keyframes border-color-change {
+	50% {
+		border-color: rgb(198, 172, 122);
 	}
 }
 @media (hover: hover) {

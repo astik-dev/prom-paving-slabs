@@ -131,6 +131,8 @@
 
             transition: all 0.2s;
 
+            animation: border-color-change 1.1s linear infinite;
+
             font-size: 23px;
             line-height: 1.6;
             color: #FFF;
@@ -142,6 +144,13 @@
 
                 font-size: 20px;
             }
+
+
+            @keyframes border-color-change {
+                50% {
+                    border-color: rgb(198, 172, 122);
+                }
+			}
 
             @media (hover: hover) {
                 &:hover {
